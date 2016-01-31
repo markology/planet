@@ -1,0 +1,96 @@
+states
+	landing
+		--provide information
+		--provide a guest preview
+		--provide registration and login
+		search box
+			--search and retrieve
+			--show loading icon
+		info
+			--display appeal
+			--display instructions
+		register
+			--post username
+			--post email
+			--post starting portal
+			--post name
+			--post age
+			--encrypt and post password
+		login
+			--get username and compare
+			--get password and compare
+			--return errors, or redirect to my portal
+
+	my portal
+		--display communal calendar
+		--provide log in & and register or log out & username
+		--provide navigation
+		--display current days schedule
+		portal calendar
+			--provide calendar rendering
+			months
+				--provide accurate calendar information
+				start day
+					--provide day 1 day of week
+				days in month
+					--provide the number of days
+				weeks
+					--contain days
+					days
+						--provide date
+						--provide event count
+						--clickable to day state
+						events
+							--contain information about event
+							--rsvp option
+							--editing if auth
+							--request message to user(optional)
+							title
+							description
+							time
+							occupancy
+								--set the minimum or maximum rsvp
+							location
+								--provide event address
+								--provide google direction link
+							author
+							state
+								--display active, cancelled, pending, rain date
+							rsvp
+								--increase the rsvps for event
+								user
+									--contains information for user
+									events posted
+									events rsvped
+									name
+									age
+									location
+									username
+									password
+									personal calendar
+										user.events posted
+										user.events rsvped
+
+	day
+		--provide day schedule
+		--option to return to portal
+		day
+			--contains all information for the day and events
+				
+
+	agenda
+		--show list of rsvps(posts included)
+		personal calendar
+			--show list of rsvps and posts
+			rsvps
+				--show event info
+				--link to author
+			posts
+				--show event info
+				--link to edit
+
+	search portals
+		--allows to search for a local portal
+		search form
+			--needs a database for location
+
