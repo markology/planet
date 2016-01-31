@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.js"></script>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script src="javascripts/moment.js"></script>
+  <script src="javascripts/underscore-min.js"></script>
+  <script src="javascripts/clndr-min.js" ></script>
+  <script src="javascripts/angular-clndr.js"></script>
+  <script src="javascripts/planetApp.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  
+
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  	<div class="topbar">
+  	<!-- replace with {{state.title}} -->
+		<span>My Portal</span>
+		<ul>
+			<li><a href="#">sign in</a></li>
+			<li class="registerbutton"><a href="#">register</a></li>
+		<ul>
+	</div>
+  <body ng-app="planet">
+  	<header>
+	    <a  href="/"><i  data-toggle="tooltip" title="Home" data-placement="right" class="fa fa-globe"></i></a>
+	    <a  href="/"><i  data-toggle="tooltip" title="Portals" data-placement="right" class="fa fa-map-marker"></i></a>
+	    <a  href="/"><i  data-toggle="tooltip" title="My Portal" data-placement="right" class="fa fa-star"></i></a>
+	    <a  href="/"><i  data-toggle="tooltip" title="Agenda" data-placement="right" class="fa fa-calendar"></i></a>
+	</header>
+	<div class="row">
+		<ui-view></ui-view>
+	</div>
+		<!-- <div id="calendar"></div> -->
+    <script type="text/ng-template" id="/myPortal.html">
+  	<div id ="calendar">sdf</div>
+  	 </script>
+
+  </body>
+
+</html>
